@@ -1,0 +1,44 @@
+# Human detector settings. Edit on your computer, put the card back in, then
+# restart the board (press RST or unplug it). Lines starting with # are ignored.
+
+# Show distances in ft or m.
+units = ft
+
+# Someone counts as "here" within this distance. The LD2410B sees about 20 ft (6 m),
+# the RD-03D and LD2450 about 26 ft (8 m) and 20 ft (6 m).
+alert_distance = 20 ft
+
+# Seconds with nobody in range before it shows CLEAR again.
+clear_seconds = 3
+
+# Beeps when someone arrives (0 = silent), and their pitch in Hz.
+# Beeps need a small speaker on the 2-pin SPEAK connector.
+beeps = 2
+beep_hz = 2600
+
+# Screen orientation: 1 = landscape, 3 = upside down.
+rotation = 1
+
+# Save arrivals and departures to detector/log.csv on this card (on / off).
+log = on
+
+# RD-03D / LD2450: swap left and right, if people show up on the wrong side
+# (it depends on which way up the radar is mounted).
+mirror = off
+
+# RD-03D / LD2450: keep showing people who've stopped moving (on / off). Turn it off
+# if dots stay where nobody is.
+still_targets = on
+
+# Brightness of the LED on the back, 0-100 (%). Tap the screen to pick its color.
+led_brightness = 100
+# Is the LED lit when it should be off? Some boards wire it the other way round:
+# then set this to on.
+led_invert = off
+
+# LD2410B radar settings. These are saved inside the radar itself, so they're only
+# sent when you remove the # in front of them.
+# sensor_range: how far the radar looks (1.5 m to 6 m, in 0.75 m steps).
+# sensor_hold_seconds: how long the radar keeps saying "person" after they leave.
+# sensor_range = 20 ft
+# sensor_hold_seconds = 5
